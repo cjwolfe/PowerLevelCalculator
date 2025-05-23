@@ -25,20 +25,23 @@ Total power aggregates individual values, adjusted for redundancy/synergy.??
 ### Assumptions (Defined)
 1. Each deck wants to win
     - winning is achieved through specific actions
-    - The ability to perform actions determines deck value
-    - The summed value of a deck (per relative card value) is the deck’s power level
-    - This summation is of the cdfs of all value problems
-    - Damage, counterspells, removal, stax
+        - The ability to perform actions determines deck value
+        - The summed value of a deck (per relative card value) is the deck’s power level
+        - This summation is of the cdfs of all value problems
+        - Damage, counterspells, removal, stax
     - Cards have intrinsic value
-    - Value is determined by
-    - How likely one is to draw the card
-    - The degree to which the card performs actions other cards don’t
-    - The ability to cast the card (mana, etc.)
-    - Relative value is determined by the value matrix, ∑
-    - Tutors have no intrinsic value—instead, they let us find cards that do. Therefore tutors are not a dimension on the value matrix but instead influence the predicted ability to play each card the card can tutor for when that card would add the most value
-    Assume tutors will always seek cards that solve problems other available cards cannot
-    - Lands / mana sources have no intrinsic value—they let us cast cards that do.
-    - Card advantage cards have no intrinsic value—they instead improve the chances of us finding cards that do.
+        1. Card Advantage vs opp
+        2. Mana Advantage vs opp
+        3. Situational value
+        - Value is determined by
+            - How likely one is to draw the card
+            - The degree to which the card performs actions other cards don’t
+            - The ability to cast the card (mana, etc.)
+            - Relative value is determined by the value matrix, ∑
+            - Tutors have no intrinsic value—instead, they let us find cards that do. Therefore tutors are not a dimension on the value matrix but instead influence the predicted ability to play each card the card can tutor for when that card would add the most value
+        - Assume tutors will always seek cards that solve problems other available cards cannot
+        - Lands / mana sources have no intrinsic value—they let us cast cards that do.
+        - Card advantage cards have no intrinsic value—they instead improve the chances of us finding cards that do.
     - Graveyard recursion cards have no intrinsic value—they instead allow us to immediately access the value of cards in our graveyards (I disagree, zone management is very important. The graveyard is just another zone you have access to other than your hand, like the command zone -cw)
 2. Intrinsic value is determined by how a card improves the chance of winning
     - Winning the game means getting closer to winning, so cards that improve the odds of winning or an opponent losing have intrinsic value
@@ -98,6 +101,18 @@ where ∑ is the covariance matrix of all v vectors with a weight vector wi to b
 
 
 
+## Notes from phone call
+
+Probability density
+Cumulative density
+
+Summing the CDFs * how many turns you have access to those cards
 
 
 
+Interaction -- Gameplan -- Card Advantage(incl tutors) -- Mana Advantage
+
+Mathematically, tutoring and card draw are different things?
+Can a card be drawn and cast? Multiply by the value that the card gives.
+
+Stax Removal Counterspells Damage
