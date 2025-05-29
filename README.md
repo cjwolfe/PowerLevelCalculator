@@ -7,6 +7,16 @@ Victor and Chris make a thing.
 - Utilize Moxfield/TappedOut/Archidekt APIs to fetch decklists based on links
 - Utilize copy/paste for text decklists.
 
+## To Do
+- [x] Create cssgrid frame for website
+- [ ] Make upload button be able to process text file input
+- [ ] Create a basic rendered view for after the program processes the input from user
+- [ ] Add in a textbox alternative input to the form
+- [ ] Use Scryfall json to get card info
+- [ ] Find a way of importing scryfall data regularly
+- [ ] Webhosting??
+
+
 ## Model Description
 
 Every model should express ideas that are logical consequences of a goal, given the assumptions behind it. My assumptions are as follows:
